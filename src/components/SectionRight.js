@@ -3,7 +3,7 @@ import SocialLinks from "./SocialLinks";
 
 export default function SectionRight({ sections, activeSlug }) {
     return (
-        <div className="md:w-1/2 flex flex-col md:space-y-9 space-y-7 flex-1 md:py-28">
+        <div className="md:w-1/2 flex flex-col md:space-y-9 space-y-7 flex-1 md:py-33">
             {sections.map((section, idx) => (
                 <Link
                     key={idx}

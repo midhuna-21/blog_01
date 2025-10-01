@@ -6,7 +6,7 @@ export default function SectionLeft({ section }) {
 
     return (
         <div className="md:w-1/2 flex flex-col">
-            <h1 className="md:text-4xl text-3xl font-semibold uppercase leading-tight mb-4">
+            <h1 className="md:text-4xl text-2xl font-semibold uppercase leading-tight mb-4">
                 {section.title}
             </h1>
 
@@ -22,8 +22,8 @@ export default function SectionLeft({ section }) {
             </div>
 
             <p
-                className="text-[13px] text-white/60 mt-2 text-justify"
-                style={{ wordSpacing: "-0.1em" }}
+                className="text-[11px] md:text-[13px] text-white/60 mt-2 text-justify md:[word-spacing:-0.1em] [word-spacing:-0.1em]"
+        
             >
                 {section.description}
             </p>

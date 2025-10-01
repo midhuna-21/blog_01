@@ -55,31 +55,16 @@ export default function IndexPage() {
             {sections[activeIndex].title.split(" ")[0]} <br />
             {sections[activeIndex].title.split(" ").slice(1).join(" ")}
           </h1>
-
-        {/* <div className="w-[400px] relative flex items-start justify-start bg-black mt-4 mb-4 h-[300px]">
-  <Image
-    src={sections[activeIndex].image}
-    alt={sections[activeIndex].title}
-    width={450}
-    height={400}
-    className="object-cover w-full h-full "
-    priority
-  />
-</div> */}
-
-<div className="w-full md:w-[400px] relative flex items-start justify-start bg-black mt- mb-4 h-[300px] md:h-[300px] sm:w-full sm:h-[250px]">
-  <Image
-    src={sections[activeIndex].image}
-    alt={sections[activeIndex].title}
-    width={450}
-    height={400}
-    className="object-cover w-full h-full"
-    priority
-  />
-</div>
-
-
-
+          <div className="w-full md:w-[400px] relative flex items-start justify-start bg-black mt- mb-4 h-[300px] md:h-[300px] sm:w-full sm:h-[250px]">
+            <Image
+              src={sections[activeIndex].image}
+              alt={sections[activeIndex].title}
+              width={450}
+              height={400}
+              className="object-cover w-full h-full"
+              priority
+            />
+          </div>
           <p className="text-sm text-white/60 mt-2">
             {sections[activeIndex].description}
           </p>
@@ -102,7 +87,7 @@ export default function IndexPage() {
                 </h2>
                 <p
                   className={`text-sm mt-1 transition-colors ${activeIndex === idx
-                    ? "text-white/30" 
+                    ? "text-white/30"
                     : "text-white/60 group-hover:text-white/80"
                     }`}
                 >

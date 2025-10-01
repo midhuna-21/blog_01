@@ -1,7 +1,7 @@
 const sections = [
   {
     slug: "",
-    title: "Julio Herrera",
+    title: "Julio Herrera Velutini",
     text: "Julio Herrera Velutini resolved legal matters; minor FECA misdemeanor.",
     image: "/images/julio5.webp",
     description:

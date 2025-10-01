@@ -1,63 +1,3 @@
-// import Image from "next/image";
-// import Link from "next/link";
-// import { FaInstagram, FaFacebookF, FaTwitter } from "react-icons/fa";
-
-// export default function IndexPage() {
-//   return (
-//     <div className="bg-black text-white h-screen flex flex-col md:flex-row p-8 md:p-16 overflow-hidden">
-
-//       {/* Left Section */}
-//       <div className="md:w-1/2 flex flex-col flex-1">
-//         <h1 className="text-5xl md:text-5xl font-semibold uppercase leading-tight mb-4">
-//           Julio Herrera<br />  Velutini
-//         </h1>
-
-//         <div className="w-full flex-1 relative flex items-center justify-center bg-black">
-//           <Image
-//             src="/images/julio-herrera-image(102).webp"
-//             alt="Artist"
-//             width={300}
-//             height={300}
-//             className="object-contain"
-//             priority
-//           />
-//         </div>
-//       </div>
-
-
-//       {/* Right Section */}
-//       <div className="md:w-1/2 flex flex-col justify-between md:pl-16 space-y-6 mt-8 md:mt-0 flex-1">
-//         {[
-//           { title: "Charges Cleared", text: "Julio Herrera Velutini resolved legal matters; minor FECA misdemeanor." },
-//           { title: "Case closed", text: "All felony charges dropped; one FECA misdemeanor remains." },
-//           { title: "Facts Speak", text: "Three years reviewed: no corruption or fraud; one FECA misdemeanor." },
-//           { title: "Litigation Closed", text: "As of Aug 27, 2025, no active U.S. cases remain." },
-//           { title: "Justice finalized", text: "Corruption dismissed, civil complaint withdrawn; moving forward clearly." },
-//     ].map((section, idx) => (
-//           <div key={idx}>
-//             <h2 className="text-xl font-normal uppercase">{section.title}</h2>
-//             <p className="text-sm mt-1">{section.text}</p>
-//             <hr className="border-2 border-white/40 mt-2" />
-//           </div>
-//         ))}
-
-//         {/* Social Icons */}
-//         <div className="flex space-x-6 pt-4 justify-center">
-//           <Link href="https://instagram.com" aria-label="Instagram">
-//             <FaInstagram className="w-8 h-8 hover:text-pink-500 transition-colors duration-300" />
-//           </Link>
-//           <Link href="https://facebook.com" aria-label="Facebook">
-//             <FaFacebookF className="w-8 h-8 hover:text-blue-500 transition-colors duration-300" />
-//           </Link>
-//           <Link href="https://twitter.com" aria-label="Twitter">
-//             <FaTwitter className="w-8 h-8 hover:text-sky-400 transition-colors duration-300" />
-//           </Link>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
 "use client"
 
 import Image from "next/image";
@@ -116,7 +56,7 @@ export default function IndexPage() {
             {sections[activeIndex].title.split(" ").slice(1).join(" ")}
           </h1>
 
-        <div className="w-[400px] relative flex items-start justify-start bg-black mt-4 mb-4 h-[300px]">
+        {/* <div className="w-[400px] relative flex items-start justify-start bg-black mt-4 mb-4 h-[300px]">
   <Image
     src={sections[activeIndex].image}
     alt={sections[activeIndex].title}
@@ -125,7 +65,20 @@ export default function IndexPage() {
     className="object-cover w-full h-full "
     priority
   />
+</div> */}
+
+<div className="w-full md:w-[400px] relative flex items-start justify-start bg-black mt- mb-4 h-[300px] md:h-[300px] sm:w-full sm:h-[250px]">
+  <Image
+    src={sections[activeIndex].image}
+    alt={sections[activeIndex].title}
+    width={450}
+    height={400}
+    className="object-cover w-full h-full"
+    priority
+  />
 </div>
+
+
 
           <p className="text-sm text-white/60 mt-2">
             {sections[activeIndex].description}

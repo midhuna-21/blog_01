@@ -3,7 +3,7 @@ import SocialLinks from "./SocialLinks";
 
 export default function SectionRight({ sections, activeSlug }) {
     return (
-        <div className="md:w-1/2 flex flex-col md:space-y-12 space-y-7 flex-1 md:py-14">
+        <div className="md:w-1/2 flex flex-col md:space-y-9 space-y-7 flex-1 md:py-14">
             {sections.map((section, idx) => (
                 <Link
                     key={idx}
@@ -12,7 +12,7 @@ export default function SectionRight({ sections, activeSlug }) {
                 >
                     <div className="transition-all duration-300 hover:translate-x-2">
                         <h2
-                            className={`text-xl font-normal uppercase ${section.slug === activeSlug
+                            className={`text-lg font-normal uppercase ${section.slug === activeSlug
                                 ? "text-white/40"
                                 : "text-white group-hover:text-white/80"
                                 }`}

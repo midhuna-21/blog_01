@@ -17,7 +17,7 @@ export default  async function SectionPage({ params }) {
 
     return (
         <div className="bg-black text-white min-h-screen flex justify-center">
-            <div className="w-full max-w-7xl flex flex-col md:flex-row p-6 md:mt-0 mt-6 md:p-24 gap-15">
+            <div className="w-full max-w-6xl flex flex-col md:flex-row p-6 md:p-16 gap-15">
                 <SectionLeft section={activeSection} />
                 <SectionRight sections={sections} activeSlug={slug} />
             </div>

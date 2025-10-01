@@ -10,7 +10,7 @@ export default function SectionLeft({ section }) {
                 {section.title}
             </h1>
 
-            <div className="w-full relative flex items-start justify-start bg-black mb-4 h-[300px] sm:h-[400px]">
+            <div className="w-full relative flex items-start justify-start bg-black mb-4 h-[300px] sm:h-[350px]">
                 <Image
                     src={section.image}
                     alt={section.title}

@@ -5,11 +5,10 @@ export default function SectionLeft({ section }) {
 
     return (
         <div className="md:w-1/2 flex flex-col">
-            <h1 className="text-5xl font-semibold uppercase leading-tight mb-4">
-                {section.title.split(" ")[0]} <br />
-                {section.title.split(" ").slice(1).join(" ")}
+            <h1 className="md:text-5xl text-3xl font-semibold capitalize leading-tight mb-4">
+                {section.title}
             </h1>
-            <div className="w-full relative flex items-start justify-start bg-black mb-4 h-[300px] sm:h-[300px]">
+            <div className="w-full relative flex items-start justify-start bg-black mb-4 h-[300px] sm:h-[400px]">
                 <Image
                     src={section.image}
                     alt={section.title}

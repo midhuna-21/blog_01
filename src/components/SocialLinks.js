@@ -5,7 +5,7 @@ export default function SocialLinks() {
 
     return (
         <>
-            <div className="flex space-x-6 pt-4 justify-center">
+            <div className="flex space-x-6 pt-4 justify-start">
                 <Link href="#" aria-label="Instagram">
                     <FaInstagram className="w-5 h-5 hover:text-pink-500 transition-colors duration-300" />
                 </Link>

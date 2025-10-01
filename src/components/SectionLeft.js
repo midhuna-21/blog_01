@@ -19,17 +19,14 @@ export default function SectionLeft({ section }) {
                     className="object-cover w-full h-full"
                     priority
                 />
-            </div>
-
+            </div>  
 
             <p
-                className="text-[11px] md:text-[13px] text-white/60 mt-2 text-justify md:[word-spacing:-0.1em] [word-spacing:-0.1em]"
-
+                className="text-[11px] md:text-[12px] text-white/60 mt-2 text-justify md:[word-spacing:-0.2em] [word-spacing:-0.1em]"
             >
                 {section.description}
             </p>
 
-            {/* Social links below the description */}
             <div className="mt-6">
                 <SocialLinks />
             </div>
